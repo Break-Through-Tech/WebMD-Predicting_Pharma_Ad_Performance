@@ -63,10 +63,16 @@ Quantitative: Mean Absolute Percentage Error (MAPE) < 30% on total_spend predict
 Use these milestones to guide your work. Your team will create a **GitHub Projects board** to track tasks within each milestone.
 
 | Month | Milestone | Key Activities |
-|-------|-----------|----------------|
-| **September** | Data Understanding | Explore dataset, handle missing values, document findings |
-| **October** | Model Development | Train baseline model, experiment with approaches, iterate |
-| **November** | Evaluation & Presentation | Finalize model, prepare presentation, document results |
+| :--- | :--- | :--- |
+| September | Data Foundations & Problem Definition | • Perform Exploratory Data Analysis (EDA) on campaign performance metrics.<br>• Clean brand name inconsistencies and resolve missing values in country, pillar, profession, and specialty.<br>• Handle null columns and anomalous campaign end dates.<br>• Encode categorical variables and establish baseline predictive metrics (MAE, RMSE, $R^2$). |
+| October | Feature Engineering & Model Development | • Engineer features across client target segments, HCP specialties, and tactic types.<br>• Train multi-output regression models and gradient boosting classifiers (XGBoost / LightGBM).<br>• Predict second-half campaign spend, Cost-Per-Engagement (CPE), and engagement volume.<br>• Perform hyperparameter tuning and cross-validation on target segments. |
+| November | Model Interpretability, UI & Final Deliverables | • Integrate SHAP (SHapley Additive exPlanations) for per-campaign feature importance.<br>• Develop an interactive Streamlit dashboard to display predictions and risk flags.<br>• Finalize project documentation, clean GitHub repository, and stakeholder presentation deck. |
+
+### Stretch Goals
+* **Campaign ROI Ranking:** Develop a cost-efficiency scoring system that ranks predicted campaigns by anticipated return on investment.
+* **Clustering + Prediction Pipeline:** Apply unsupervised clustering (K-Means or DBSCAN) to group campaigns by profile similarity prior to running cluster-specific regressors.
+* **Time-Series Forecasting Layer:** Build a temporal trend model for high-volume brands and ensemble it with regression outputs.
+* **Data Quality Audit Tool:** Build an automated validation script or UI widget that flags incoming campaign records with missing or inconsistent metadata before running inference.
 
 > **Note for the team:** Please create a GitHub Projects board in this repository to break these milestones into weekly tasks. Go to the **Projects** tab → **New project** → Choose **Board** → Add columns for each month.
 
