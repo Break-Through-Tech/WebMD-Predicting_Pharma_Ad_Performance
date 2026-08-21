@@ -59,7 +59,7 @@ The dataset includes Campaign's performances, including total engagement, type o
 
 This data will be shared as a .csv file with the student team.
 
-**Location:** https://github.com/Break-Through-Tech/TBD_Pharma-1A-predicting-pharma-ad-performance/edit/main/Challenge-Project-Overview.md#:~:text=.gitkeep-,BreakThroughTech_training_data_1,-.xlsx
+**Location:** data/BreakThroughTech_training_data_1.xlsx
 
 
 
